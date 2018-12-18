@@ -13,4 +13,4 @@ function print() {
     });
     return eArr
 }
-print();
+console.log(print())
