@@ -13,4 +13,4 @@ function checkNum1(...argArray) {
     console.log(result)
 }
 
-const result1 = checkNum1(10,2,3,4,5)
+const result1 = checkNum1(10,2,3,4,5, false)
