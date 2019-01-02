@@ -9,6 +9,7 @@ const SETTING = {
 }
 
 let { count, maxNumber } = SETTING;
+console.log(count, maxNumber)
 
 function getLottoNumbers(count, maxNumber) {
     const myLotto = new Set();
