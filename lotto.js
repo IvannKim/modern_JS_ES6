@@ -10,7 +10,7 @@ const SETTING = {
 
 let { count, maxNumber } = SETTING;
 console.log(count, maxNumber)
-
+// Set : 중복없이 유일한 값을 저장할때, 이미 존재하는지 체크할때 유용.
 function getLottoNumbers(count, maxNumber) {
     const myLotto = new Set();
     while (myLotto.size !== count) {
