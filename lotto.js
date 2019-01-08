@@ -9,16 +9,16 @@ const SETTING = {
 }
 
 let { count, maxNumber } = SETTING;
-// Set : 중복없이 유일한 값을 저장할때, 이미 존재하는지 체크할때 유용.
+
+function getRandomNumber(maxNumber) {
+    return Math.floor(Math.random() * maxNumber + 1)
+}
+
 function getLottoNumbers(count, maxNumber) {
-    const myLotto = new Set();
+    const myLotto = new Set(); // Set : 중복없이 유일한 값을 저장할때, 이미 존재하는지 체크할때 유용.
     while (myLotto.size !== count) {
         myLotto.add(getRandomNumber(maxNumber))
     }
     return myLotto;
 }
 console.log(getLottoNumbers(count, maxNumber))
-
-function getRandomNumber(maxNumber) {
-    return Math.floor(Math.random() * maxNumber + 1)
-}
